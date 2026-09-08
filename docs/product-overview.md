@@ -59,9 +59,9 @@ In accordance with our governing principle (**PROVE, DON'T PROMISE**), all syste
 | Component / Feature | Current Classification | Verification Status |
 | :--- | :--- | :--- |
 | **Enterprise Architecture Blueprint** | **IMPLEMENTED** | Documented and publicly specified in this repository |
-| **Deterministic Security Scoring Engine** | **IMPLEMENTED** | Runnable in repository (`npm run demo`) |
-| **Synthetic Security Datasets** | **IMPLEMENTED** | Verified against schema standards (`npm run validate:data`) |
-| **RAG Retrieval Reference Pipeline** | **IMPLEMENTED** | Runnable in repository reference code |
+| **Deterministic Security Scoring Specification** | **DESIGNED** | Formulated in POC architecture documents |
+| **Synthetic Security Datasets** | **IMPLEMENTED** | Included in `/examples` directory |
+| **RAG Retrieval Reference Pipeline** | **DESIGNED** | Documented in model strategy specification |
 | **Distributed Inference Runtime** | **IMPLEMENTED (PRIVATE)** | Maintained in private FlockML production repository |
 | **Air-Gapped Cryptographic Audit Layer** | **IMPLEMENTED (PRIVATE)** | Maintained in private FlockML production repository |
 | **Proposed CESC Security Intelligence POC** | **PROPOSED** | Technical specification complete; pending stakeholder review |

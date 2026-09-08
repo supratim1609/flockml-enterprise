@@ -15,7 +15,7 @@ To protect proprietary intellectual property while providing complete technical 
 | **Enterprise Architecture Blueprint** | **YES** | YES | Publicly documents how enterprise data interfaces with the AI layer |
 | **Business Use Case Specifications** | **YES** | YES | Documents the 9 core enterprise application domains |
 | **Synthetic Security Datasets** | **YES** | YES | Allows public and enterprise evaluation without exposing real data |
-| **Deterministic Risk Scoring Engine** | **YES** | YES | Provides transparent, verifiable reference scoring (`npm run demo`) |
+| **Deterministic Risk Scoring Specifications** | **YES** | YES | Provides transparent, verifiable multi-factor risk formulas |
 | **Evaluation Metrics & POC Criteria** | **YES** | YES | Defines objective acceptance gates for enterprise procurement |
 | **Enterprise Data Dictionaries** | **YES** | YES | Establishes standard integration schemas for IT/SecOps teams |
 | **Distributed Inference Runtime** | **NO** | **YES** | Proprietary tensor sharding, pipeline parallelism, and scheduling kernels |
@@ -30,5 +30,5 @@ To protect proprietary intellectual property while providing complete technical 
 ## 3. Why This Boundary Protects Enterprise Customers
 
 1. **Clean Integration Surfaces:** Enterprise customers interact with FlockML through standardized, auditable APIs and file-based data ingestion interfaces rather than fragile, low-level internal code bindings.
-2. **IP Isolation:** Customers do not risk cross-licensing complications or dependency bloat by evaluating reference documentation and synthetic demos.
+2. **IP Isolation:** Customers do not risk cross-licensing complications or dependency bloat by evaluating reference documentation and specifications.
 3. **Controlled Enterprise Distribution:** When an organization enters a formal proof-of-concept or commercial pilot, the production runtime is deployed via signed, tamper-evident container images or air-gapped binary bundles directly into the customer's private virtual machine environment.

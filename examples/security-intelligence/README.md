@@ -19,14 +19,6 @@ This directory provides a complete, structured, and realistic set of synthetic d
 
 ---
 
-## How to Test and Run Against These Datasets
+## Data Schema & Intended Use
 
-You can run the deterministic security intelligence evaluator directly from the repository root:
-
-```bash
-# Validate dataset integrity
-npm run validate:data
-
-# Run the deterministic decision-support demo
-npm run demo
-```
+These datasets serve as the reference contract for enterprise ingestion. When staging a proof-of-concept on an isolated enterprise VM, the customer's vulnerability scanner dumps (from Tenable Nessus, Qualys, or Rapid7) and CMDB asset registers are normalized against these standardized schemas.

@@ -21,8 +21,8 @@ flowchart LR
 ### Stage 0: Synthetic Baseline Validation
 - **Objective:** Validate the platform architecture and scoring algorithms using purely synthetic data before requesting enterprise resources.
 - **Inputs:** Synthetic datasets provided in this repository.
-- **Deliverables:** Verified execution of `npm run demo` and automated test passing.
-- **Security Boundary:** Public repository sandbox.
+- **Deliverables:** Architectural validation of multi-factor risk formulas and synthetic schemas.
+- **Security Boundary:** Public repository specification.
 - **Status:** **COMPLETED**
 
 ---

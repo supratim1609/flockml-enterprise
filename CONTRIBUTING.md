@@ -14,7 +14,7 @@ Our governing principle is **PROVE, DON'T PROMISE.**
 ## Guidelines for Contributions
 
 1. **No Sensitive Data:** Never include real company data, confidential utility logs, or credentials in any pull request. Use the synthetic data generator or adhere to existing synthetic schema standards.
-2. **Deterministic References:** Reference demos and evaluation scripts must execute deterministically without requiring external commercial API keys.
+2. **Deterministic Specifications:** Reference architectures and evaluation frameworks must be mathematically transparent and well-defined.
 3. **Enterprise Tone:** Maintain objective, clear, and professional technical documentation. Avoid buzzwords such as "revolutionary" or "game-changing".
 4. **Documentation Integrity:** Ensure all Markdown links, table layouts, and Mermaid diagrams are valid and render correctly.
 
@@ -23,10 +23,6 @@ Our governing principle is **PROVE, DON'T PROMISE.**
 ## Submission Process
 
 1. Fork the repository and create a feature branch (`git checkout -b feature/enterprise-doc-improvement`).
-2. Validate any code or dataset changes locally:
-   ```bash
-   npm run validate:data
-   npm run demo
-   ```
+2. Verify all Markdown documentation formatting and links.
 3. Commit your changes with clear, descriptive commit messages.
 4. Push to your fork and submit a Pull Request against `main`.

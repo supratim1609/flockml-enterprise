@@ -58,10 +58,11 @@ To uphold the core principle of **Prove, Don't Promise**, the analytical capabil
 
 | Subsystem / Feature | Public Repository Status | Production / Pilot Status |
 |---|---|---|
-| **Deterministic Risk Engine** | **IMPLEMENTED** | Validated via unit test suite |
+| **Deterministic Risk Engine Specification** | **DESIGNED** | Documented multi-factor formula |
 | **Synthetic Security Datasets** | **IMPLEMENTED** | Included in `/examples` |
-| **Reference SecOps CLI Demo** | **IMPLEMENTED** | Zero-dependency TypeScript runtime |
+| **Enterprise Evaluation Framework** | **DESIGNED** | Complete testing methodology |
 | **Level 1 RAG Retrieval Engine** | **PROPOSED / ARCHITECTED** | Documented for POC staging |
-| **Purdue Model Zone Weighting** | **IMPLEMENTED** (in demo engine) | Calibrated for utility architectures |
+| **Purdue Model Zone Weighting** | **DESIGNED** | Calibrated for utility architectures |
 | **Autonomous Remediation** | **PERMANENT NON-GOAL** | Prohibited by design |
 | **CESC Production Data Integration**| **PROPOSED PILOT** | Awaiting formal POC stage sign-off |
+

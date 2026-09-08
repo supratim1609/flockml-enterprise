@@ -42,10 +42,10 @@ In adherence to the **Prove, Don't Promise** principle, capabilities and deploym
 | Capability / Dimension | Status | Notes / Location |
 |---|---|---|
 | **Enterprise Architecture Specification** | **Designed** | Fully documented in [`/docs`](docs/) and [`/architecture`](architecture/) |
-| **Deterministic Risk Scoring Engine** | **Implemented** | Zero-dependency TypeScript runtime in [`/demo`](demo/) |
+| **Deterministic Risk Scoring Specification** | **Designed** | Multi-factor formula in [`poc/cesc/security-intelligence.md`](poc/cesc/security-intelligence.md) |
 | **Synthetic Security Intelligence Datasets** | **Included** | Comprehensive schemas in [`/examples`](examples/security-intelligence/) |
 | **Enterprise POC Specification (CESC Reference)** | **Included** | Complete 6-stage pilot framework in [`/poc/cesc`](poc/cesc/) |
-| **Public Enterprise SecOps Demo** | **Reference Implementation** | Runnable locally via `npm run demo` |
+| **Enterprise Evaluation Framework** | **Designed** | Metrics & methodology in [`/evaluation`](evaluation/) |
 | **Level 1 RAG Grounding Architecture** | **Designed** | Context-bounded retrieval model in [`docs/model-strategy.md`](docs/model-strategy.md) |
 | **Distributed Inference Runtime** | **Implemented in private FlockML codebase** | Proprietary multi-node execution engine |
 | **Model Residency & Cryptographic Attestation** | **Implemented in private FlockML codebase** | Node-level hardware verification |
@@ -130,7 +130,7 @@ The same underlying private AI infrastructure layer supports multiple enterprise
 +------------------+ +------------------+ +------------------+ +------------------+
 ```
 
-1. [**Security Intelligence**](business/security-intelligence.md): Vulnerability prioritization, exposure analysis, and audit readiness (*Implemented reference demo*).
+1. [**Security Intelligence**](business/security-intelligence.md): Vulnerability prioritization, exposure analysis, and audit readiness (*Reference POC design*).
 2. [**Predictive Maintenance**](business/predictive-maintenance.md): Dissolved gas analysis (DGA) and vibration telemetry on substation transformers (*Proposed*).
 3. [**Enterprise Knowledge Assistant**](business/enterprise-knowledge.md): Air-gapped retrieval over high-voltage engineering SOPs and single-line schematics (*Proposed*).
 4. [**Operational Intelligence**](business/operational-intelligence.md): Smart meter telemetry, phase balancing, and feeder overload prediction (*Proposed*).
@@ -175,31 +175,15 @@ graph TD
 
 ---
 
-## 6. Runnable Reference Demo (Zero API Keys Required)
+## 6. Synthetic Reference Datasets & Schemas
 
-The repository includes a standalone, zero-dependency reference demonstration of the Security Intelligence triage engine. It runs 100% offline and requires no paid cloud API tokens.
+The repository provides fully documented, realistic synthetic datasets to demonstrate the expected data model and format for enterprise vulnerability triage:
 
-### Running the Demo
-```bash
-# Clone the repository
-git clone https://github.com/supratim1609/flockml-enterprise.git
-cd flockml-enterprise
-
-# Install dependencies (TypeScript runtime)
-npm install
-
-# Run the deterministic SecOps demo
-npm run demo
-```
-
-### Running Automated Verification & Tests
-```bash
-# Run unit test suite
-npm test
-
-# Run referential integrity audit on synthetic datasets
-npm run validate:data
-```
+* [`examples/security-intelligence/synthetic-assets.csv`](examples/security-intelligence/synthetic-assets.csv): Asset inventory records (15 systems across OT, DMZ, and Corporate IT).
+* [`examples/security-intelligence/synthetic-vulnerabilities.csv`](examples/security-intelligence/synthetic-vulnerabilities.csv): CVE definitions, CVSS scores, and threat weaponization status.
+* [`examples/security-intelligence/synthetic-findings.csv`](examples/security-intelligence/synthetic-findings.csv): Detection events, scan timestamps, and remediation SLA deadlines.
+* [`examples/security-intelligence/data-dictionary.md`](examples/security-intelligence/data-dictionary.md): Field-by-field schema reference and validation criteria.
+* [`examples/security-intelligence/example-queries.md`](examples/security-intelligence/example-queries.md): Canonical operational queries executed by SecOps analysts.
 
 ---
 
@@ -209,7 +193,7 @@ FlockML Enterprise is engineered for environments governed by zero-trust and str
 
 * **Zero Cloud Egress:** All scoring, parsing, and optional LLM synthesis occurs locally within the customer's private network. Egress firewalls block all external connections.
 * **Role-Based Access Control (RBAC):** Granular separation between Tier-1 analysts, system owners, and security administrators.
-* **Deterministic Source Anchoring:** The synthetic dataset is the single source of truth; language models are prohibited from inventing ungrounded assets or CVEs.
+* **Deterministic Source Anchoring:** Enterprise datasets are the single source of truth; language models are prohibited from inventing ungrounded assets or CVEs.
 * **No Autonomous Actions:** The platform acts strictly as decision support. It will never independently modify firewalls, alter network routing, or push patches without explicit human sign-off.
 * **Compliance Posture:** Designed to align with **CEA Cybersecurity Regulations for Power Sector**, **CERT-In Directives**, and the **DPDP Act 2023**. *(Note: Compliance must be certified against final physical deployments).*
 
@@ -239,7 +223,7 @@ To ensure enterprise transparency while protecting core intellectual property, t
 |---|---|---|
 | **Enterprise Technical Architecture** | **Included** (Complete specifications) | Internal operational runbooks |
 | **Business Applications & Use Cases** | **Included** (All 8 workload designs) | Production customer workflows |
-| **Deterministic Risk Engine** | **Included** (Reference implementation) | Accelerated native microservices |
+| **Risk Scoring Specifications** | **Included** (Multi-factor formulas) | Accelerated native microservices |
 | **Synthetic Datasets & Schemas** | **Included** (100% synthetic CSVs) | Customer proprietary datasets |
 | **Evaluation Framework & Metrics** | **Included** (Full methodology) | Continuous benchmarking harness |
 | **Distributed Mesh Runtime** | Excluded | **Proprietary implementation** |
@@ -256,7 +240,7 @@ To ensure enterprise transparency while protecting core intellectual property, t
 
 The proposed pilot adoption roadmap progresses through seven structured stages:
 
-* **Stage 0: Synthetic Data Validation** *(Current State — Runnable in this repo)*
+* **Stage 0: Synthetic Schema Alignment & Discovery** *(Current State — Documented in this repo)*
 * **Stage 1: Enterprise Sample Ingestion** *(Sample dump in isolated staging VM)*
 * **Stage 2: Double-Blind Expert Evaluation** *(Scoring concordance against senior analysts)*
 * **Stage 3: Controlled SecOps Pilot** *(Side-by-side evaluation with manual triage)*
@@ -271,7 +255,7 @@ The proposed pilot adoption roadmap progresses through seven structured stages:
 ## 11. Project Status & Roadmap
 
 ```
-[Q3 2026] Public Enterprise Architecture & Synthetic SecOps Demo (COMPLETED)
+[Q3 2026] Public Enterprise Architecture & Security Specifications (COMPLETED)
    ↓
 [Q4 2026] Isolated Enterprise POC Deployments (Staging VLAN Baseline)
    ↓

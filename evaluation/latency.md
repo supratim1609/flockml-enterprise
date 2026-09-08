@@ -39,7 +39,4 @@ During Stage 1 and Stage 2 of the enterprise POC, latency must be formally profi
 3. **Statistical Aggregation:** Calculate **P50 (Median)**, **P95**, and **P99** latency percentiles.
 4. **Memory Profiling:** Verify that heap allocation returns to baseline post-garbage collection with zero memory leakage.
 
-```bash
-# Automated Latency Benchmark Command (TypeScript)
-npm run demo -- --profile --iterations=50
-```
+During on-premise staging, this latency profiling protocol is executed by the private staging evaluation harness deployed to the enterprise VM.

@@ -1,7 +1,7 @@
 # Application 1: Security Intelligence
 
-> **Implementation Status:** **IMPLEMENTED (Reference Architecture & Deterministic Demo)**  
-> Runnable locally via `npm run demo` using synthetic datasets.
+> **Implementation Status:** **PROPOSED (Reference Architecture & Synthetic Schemas)**  
+> Specified for on-premise private VM staging.
 
 ---
 
