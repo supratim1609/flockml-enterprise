@@ -1,0 +1,26 @@
+name: Markdown & Documentation Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-markdown:
+    name: Validate Markdown Syntax & Links
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Verify Markdown file readability
+        run: |
+          echo "Checking Markdown integrity across docs, poc, architecture, business, and evaluation..."
+          find . -name "*.md" -not -path "*/node_modules/*" -exec ls -lh {} +

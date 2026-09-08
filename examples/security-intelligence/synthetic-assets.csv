@@ -1,0 +1,17 @@
+# SYNTHETIC DATA — NOT FROM CESC OR ANY REAL ENTERPRISE
+asset_id,asset_name,asset_type,business_unit,network_zone,criticality,internet_exposed,operating_system,owner,location,last_patch_date
+AST-001,Substation-Gateway-Alpha,OT-Gateway,Grid Operations,OT-DMZ,CRITICAL,TRUE,Ubuntu Linux 20.04 LTS,SecOps-OT,Howrah Zonal Hub,2026-03-12
+AST-002,SCADA-Historian-Central,Data-Historian,Grid Operations,OT-CONTROL-ZONE,CRITICAL,FALSE,Windows Server 2019,OT-Engineering,Victoria Control Room,2026-04-18
+AST-003,Billing-Portal-Web-01,Web-Server,Commercial IT,EXTERNAL-DMZ,HIGH,TRUE,Debian Linux 11,WebOps-Team,Salt Lake Data Center,2026-05-02
+AST-004,SmartMeter-HeadEnd-Ingest,Telemetry-Ingest,Smart Metering,IT-CORPORATE,CRITICAL,FALSE,RHEL 8.6,AMI-Operations,Central Server Room,2026-02-14
+AST-005,Distribution-RTU-Feeder-12,Remote-Terminal,Distribution,OT-CONTROL-ZONE,HIGH,FALSE,Embedded Linux 4.19,Substation-Engineering,Chowringhee Substation,2025-11-20
+AST-006,Enterprise-ERP-Database,Database-Cluster,Corporate IT,IT-CORPORATE,CRITICAL,FALSE,Oracle Enterprise Linux,DBA-Team,Victoria Server Room,2026-01-10
+AST-007,Customer-Mobile-API-Gateway,API-Gateway,Digital Services,EXTERNAL-DMZ,HIGH,TRUE,Alpine Linux / Envoy,AppDev-Team,Salt Lake Data Center,2026-06-25
+AST-008,Substation-Switch-Controller-B,Network-Core,Grid Operations,OT-CONTROL-ZONE,CRITICAL,FALSE,Cisco IOS-XE,Network-SecOps,Howrah Zonal Hub,2026-02-28
+AST-009,Zonal-GIS-Mapping-Workstation,Workstation,GIS Engineering,IT-CORPORATE,MEDIUM,FALSE,Windows 11 Enterprise,GIS-Team,Central Planning Office,2026-06-10
+AST-010,Outage-Management-AppServer,Application-Server,Customer Care,IT-CORPORATE,HIGH,FALSE,Ubuntu Linux 22.04 LTS,IT-Ops,Victoria Server Room,2026-04-05
+AST-011,Substation-RTU-Feeder-07,Remote-Terminal,Distribution,OT-CONTROL-ZONE,HIGH,FALSE,VxWorks 6.9,Substation-Engineering,North Kolkata Substation,2025-09-14
+AST-012,Field-Staff-VPN-Concentrator,VPN-Gateway,IT Infrastructure,EXTERNAL-DMZ,CRITICAL,TRUE,FortiOS 7.0,Network-SecOps,Salt Lake Data Center,2026-01-22
+AST-013,HRMS-Payroll-Portal,Internal-Web,Human Resources,IT-CORPORATE,MEDIUM,FALSE,Windows Server 2022,HR-IT,Victoria House,2026-05-19
+AST-014,Active-Directory-DomainController,Identity-Auth,Enterprise IT,IT-CORPORATE,CRITICAL,FALSE,Windows Server 2019,SysAdmin-Team,Central Server Room,2026-03-30
+AST-015,Solar-Feeder-Telemetry-Collector,IoT-Concentrator,Renewables,OT-DMZ,MEDIUM,TRUE,Debian Linux 12,GreenEnergy-Ops,Rajarhat Solar Plant,2026-04-12

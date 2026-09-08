@@ -1,0 +1,17 @@
+# SYNTHETIC DATA — NOT FROM CESC OR ANY REAL ENTERPRISE
+cve_id,severity,cvss_score,description,affected_product,exploit_available,published_date
+CVE-2024-21413,CRITICAL,9.8,Remote Code Execution vulnerability in authentication parser,Microsoft Exchange / Outlook,TRUE,2024-02-13
+CVE-2024-3400,CRITICAL,10.0,Command injection in GlobalProtect gateway portal,Palo Alto PAN-OS / Gateway,TRUE,2024-04-12
+CVE-2023-48795,MEDIUM,5.9,Prefix truncation attack in SSH transport protocol (Terrapin),OpenSSH / Dropbear,TRUE,2023-12-18
+CVE-2024-6387,CRITICAL,8.1,Signal handler race condition leading to unauthenticated RCE (regreSSHion),OpenSSH Server on Linux,TRUE,2024-07-01
+CVE-2023-38606,HIGH,7.8,Improper validation in kernel memory mapping,Linux Kernel Subsystem,FALSE,2023-07-24
+CVE-2024-23897,HIGH,7.5,Arbitrary file read leading to remote code execution via CLI parser,Jenkins Automation Engine,TRUE,2024-01-24
+CVE-2023-22518,CRITICAL,9.8,Improper authorization vulnerability in web management interface,Atlassian Confluence Data Center,TRUE,2023-10-31
+CVE-2024-1709,CRITICAL,10.0,Authentication bypass in web setup wizard,ScreenConnect Remote Access,TRUE,2024-02-19
+CVE-2023-46604,CRITICAL,9.8,Untrusted class deserialization allowing remote code execution,Apache ActiveMQ Broker,TRUE,2023-10-27
+CVE-2024-21762,CRITICAL,9.8,Out-of-bounds write in SSL-VPN web portal,FortiOS Web Proxy,TRUE,2024-02-09
+CVE-2023-36884,HIGH,8.3,Office and Windows HTML remote code execution vulnerability,Microsoft Windows Kernel,FALSE,2023-07-11
+CVE-2023-3519,CRITICAL,9.8,Unauthenticated remote code execution in NetScaler gateway,Citrix ADC / NetScaler,TRUE,2023-07-18
+CVE-2024-24919,HIGH,8.6,Arbitrary information disclosure on VPN gateways,Check Point Security Gateway,TRUE,2024-05-28
+CVE-2023-27997,CRITICAL,9.8,Heap-based buffer overflow in SSL-VPN portal,Fortinet FortiOS,TRUE,2023-06-11
+CVE-2024-38077,CRITICAL,9.8,Remote code execution vulnerability in Remote Desktop Licensing Service,Windows Server Licensing,FALSE,2024-07-09
