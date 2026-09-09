@@ -12,10 +12,10 @@ FlockML Enterprise does not force a monolithic "one-size-fits-all" deployment to
 
 ```mermaid
 graph LR
-    M1[Model 1: Single Standalone Server] --> M2[Model 2: Private Staging Cluster]
-    M2 --> M3[Model 3: Air-Gapped OT Plant]
-    M3 --> M4[Model 4: Private Hybrid Cloud]
-    M4 --> M5[Model 5: Distributed Infrastructure]
+    M1["Model 1: Single Standalone Server"] --> M2["Model 2: Private Staging Cluster"]
+    M2 --> M3["Model 3: Air-Gapped OT Plant"]
+    M3 --> M4["Model 4: Private Hybrid Cloud"]
+    M4 --> M5["Model 5: Distributed Infrastructure"]
 ```
 
 ---

@@ -6,12 +6,12 @@ The proposed proof-of-concept is structured across seven discrete, evaluation-ga
 
 ```mermaid
 flowchart LR
-    S0[Stage 0: Synthetic Validation] --> S1[Stage 1: Staging Provisioning]
-    S1 --> S2[Stage 2: Analyst Blind Review]
-    S2 --> S3[Stage 3: Controlled 14-Day Pilot]
-    S3 --> S4[Stage 4: Integration Review]
-    S4 --> S5[Stage 5: Production Sign-Off]
-    S5 --> S6[Stage 6: Multi-Workload Expansion]
+    S0["Stage 0: Synthetic Validation"] --> S1["Stage 1: Staging Provisioning"]
+    S1 --> S2["Stage 2: Analyst Blind Review"]
+    S2 --> S3["Stage 3: Controlled 14-Day Pilot"]
+    S3 --> S4["Stage 4: Integration Review"]
+    S4 --> S5["Stage 5: Production Sign-Off"]
+    S5 --> S6["Stage 6: Multi-Workload Expansion"]
 ```
 
 ---

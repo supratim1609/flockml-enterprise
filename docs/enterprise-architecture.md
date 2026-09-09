@@ -12,40 +12,40 @@ The **FlockML Enterprise Architecture** establishes a modular, zero-trust infras
 flowchart TD
     subgraph Enterprise Boundary [Customer Controlled Network Boundary]
         subgraph Ingestion Layer [Data Ingestion & Connectors]
-            DS1[(Asset Inventory / CMDB)]
-            DS2[(Vulnerability Scanners)]
-            DS3[(SCADA & Grid Telemetry)]
-            DS4[Document Repositories]
+            DS1[("Asset Inventory / CMDB")]
+            DS2[("Vulnerability Scanners")]
+            DS3[("SCADA & Grid Telemetry")]
+            DS4["Document Repositories"]
         end
 
         subgraph Processing Layer [Processing & Governance]
-            P1[Validation & Schema Enforcement]
-            P2[Normalization & Tokenization]
-            P3[Anonymization & Sensitive Field Masking]
+            P1["Validation & Schema Enforcement"]
+            P2["Normalization & Tokenization"]
+            P3["Anonymization & Sensitive Field Masking"]
         end
 
         subgraph Knowledge Layer [Local Knowledge & Retrieval]
-            K1[(Air-Gapped Vector Index)]
-            K2[(Structured Entity Graph)]
-            K3[Hybrid Retrieval Engine]
+            K1[("Air-Gapped Vector Index")]
+            K2[("Structured Entity Graph")]
+            K3["Hybrid Retrieval Engine"]
         end
 
         subgraph Runtime Layer [Private Model Runtime]
-            R1[Local Model Weights Repository]
-            R2[Inference Gateway / Shard Coordinator]
-            R3[Local Compute Nodes / VMs / Workstations]
+            R1["Local Model Weights Repository"]
+            R2["Inference Gateway / Shard Coordinator"]
+            R3["Local Compute Nodes / VMs / Workstations"]
         end
 
         subgraph Decision Layer [Intelligence & Decision Support]
-            D1[Explainable Risk Scoring Engine]
-            D2[Attribution & Evidence Formatter]
-            D3[Role-Based Intelligence API]
+            D1["Explainable Risk Scoring Engine"]
+            D2["Attribution & Evidence Formatter"]
+            D3["Role-Based Intelligence API"]
         end
 
         subgraph Consumption Layer [Enterprise Consumers]
-            U1[SOC Analysts & CISO Dashboard]
-            U2[OT Grid Operations Engineers]
-            U3[Executive Leadership & Change Board]
+            U1["SOC Analysts & CISO Dashboard"]
+            U2["OT Grid Operations Engineers"]
+            U3["Executive Leadership & Change Board"]
         end
     end
 

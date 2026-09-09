@@ -14,13 +14,13 @@ Enterprises operating critical national infrastructure (power generation and dis
 ```mermaid
 flowchart LR
     subgraph Enterprise Perimeter
-        A[Raw Scanner & Asset Data] --> B[Local PII & IP Redaction]
-        B --> C[Air-Gapped Private Vector Index]
-        C --> D[Ephemeral In-Memory Reasoning]
-        D --> E[Human Decision Support Output]
+        A["Raw Scanner & Asset Data"] --> B["Local PII & IP Redaction"]
+        B --> C["Air-Gapped Private Vector Index"]
+        C --> D["Ephemeral In-Memory Reasoning"]
+        D --> E["Human Decision Support Output"]
     end
     subgraph Public Cloud
-        F[External Cloud / OpenAI / AWS]
+        F["External Cloud / OpenAI / AWS"]
     end
 
     D -.->|ZERO EGRESS GUARANTEED| F

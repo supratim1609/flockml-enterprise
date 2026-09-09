@@ -149,22 +149,22 @@ FlockML Enterprise enforces a strict unidirectional pipeline ensuring zero unaut
 ```mermaid
 graph TD
     subgraph Enterprise_Data_Plane ["Enterprise Data Plane (Controlled / Air-Gapped)"]
-        D1[Asset Inventory / CMDB]
-        D2[Vulnerability Scanner Logs]
-        D3[OT Telemetry & Historians]
+        D1["Asset Inventory / CMDB"]
+        D2["Vulnerability Scanner Logs"]
+        D3["OT Telemetry & Historians"]
     end
 
     subgraph FlockML_Plane ["FlockML Enterprise Layer (Local Host / Private VLAN)"]
-        I1[Data Ingestion & Normalization]
-        I2[Deterministic Scoring Engine]
-        I3[Structured Graph / Vector Store]
-        I4[Local Model Runtime (Optional)]
+        I1["Data Ingestion & Normalization"]
+        I2["Deterministic Scoring Engine"]
+        I3["Structured Graph / Vector Store"]
+        I4["Local Model Runtime (Optional)"]
     end
 
     subgraph Decision_Plane ["Human Decision & Governance Plane"]
-        A1[SecOps Prioritization Console]
-        A2[Executive Posture Briefings]
-        A3[CEA / CERT-In Audit Exports]
+        A1["SecOps Prioritization Console"]
+        A2["Executive Posture Briefings"]
+        A3["CEA / CERT-In Audit Exports"]
     end
 
     Enterprise_Data_Plane --> FlockML_Plane

@@ -8,9 +8,9 @@ Instead, FlockML structures enterprise model adoption into three distinct, matur
 
 ```mermaid
 flowchart TD
-    Tier1[Level 1: Foundation Model + RAG]
-    Tier2[Level 2: Parameter-Efficient Fine-Tuning PEFT]
-    Tier3[Level 3: Domain-Specific Foundation Model]
+    Tier1["Level 1: Foundation Model + RAG"]
+    Tier2["Level 2: Parameter-Efficient Fine-Tuning PEFT"]
+    Tier3["Level 3: Domain-Specific Foundation Model"]
 
     Tier1 -->|If domain vocabulary or stylistic compliance is insufficient| Tier2
     Tier2 -->|If fundamental pre-training data is proprietary and unique| Tier3

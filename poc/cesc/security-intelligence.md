@@ -6,18 +6,18 @@ The proposed Security Intelligence engine operates on a deterministic, multi-fac
 
 ```mermaid
 flowchart TD
-    subgraph MultiFactor [Multi-Factor Composite Risk Analysis]
-        F1[1. CVSS Base Severity: Up to 40 pts]
-        F2[2. Asset Business Criticality: Up to 25 pts]
-        F3[3. Perimeter Internet Exposure: 15 pts]
-        F4[4. Active Public Exploit Code: 10 pts]
-        F5[5. SLA Deadline Aging: Up to 10 pts]
+    subgraph MultiFactor ["Multi-Factor Composite Risk Analysis"]
+        F1["1. CVSS Base Severity: Up to 40 pts"]
+        F2["2. Asset Business Criticality: Up to 25 pts"]
+        F3["3. Perimeter Internet Exposure: 15 pts"]
+        F4["4. Active Public Exploit Code: 10 pts"]
+        F5["5. SLA Deadline Aging: Up to 10 pts"]
     end
 
-    F1 & F2 & F3 & F4 & F5 --> COMPOSITE[Composite Risk Score: 0 to 100 pts]
-    COMPOSITE --> RANK[Sequential Asset Risk Ranking]
-    RANK --> TOP10[Top-10 Priority Patching Queue]
-    TOP10 --> EXPLAIN[Automated Grounded Explanation & Evidence Citations]
+    F1 & F2 & F3 & F4 & F5 --> COMPOSITE["Composite Risk Score: 0 to 100 pts"]
+    COMPOSITE --> RANK["Sequential Asset Risk Ranking"]
+    RANK --> TOP10["Top-10 Priority Patching Queue"]
+    TOP10 --> EXPLAIN["Automated Grounded Explanation & Evidence Citations"]
 ```
 
 ---

@@ -17,24 +17,24 @@ FlockML Enterprise acts as the intermediary execution plane between **Raw Enterp
 ```mermaid
 graph TD
     subgraph Enterprise_Data_Plane ["Enterprise Data Plane (Controlled / Air-Gapped)"]
-        D1[Asset Inventory / CMDB]
-        D2[Vulnerability Scanner Logs]
-        D3[OT Telemetry & SCADA Historians]
-        D4[Engineering SOPs & Schematics]
+        D1["Asset Inventory / CMDB"]
+        D2["Vulnerability Scanner Logs"]
+        D3["OT Telemetry & SCADA Historians"]
+        D4["Engineering SOPs & Schematics"]
     end
 
     subgraph FlockML_Plane ["FlockML Enterprise Infrastructure Layer"]
-        I1[Data Ingestion & Normalization]
-        I2[Deterministic Scoring & Graph Indexing]
-        I3[Isolated Retrieval Engine / Vector Store]
-        I4[Private LLM Execution Runtime]
+        I1["Data Ingestion & Normalization"]
+        I2["Deterministic Scoring & Graph Indexing"]
+        I3["Isolated Retrieval Engine / Vector Store"]
+        I4["Private LLM Execution Runtime"]
     end
 
     subgraph Decision_Plane ["Human Decision & Governance Plane"]
-        A1[SecOps Analyst Prioritization Dashboard]
-        A2[Operations & Maintenance Scheduling]
-        A3[CISO / Executive Posture Briefings]
-        A4[Regulatory & Compliance Auditing]
+        A1["SecOps Analyst Prioritization Dashboard"]
+        A2["Operations & Maintenance Scheduling"]
+        A3["CISO / Executive Posture Briefings"]
+        A4["Regulatory & Compliance Auditing"]
     end
 
     Enterprise_Data_Plane --> FlockML_Plane

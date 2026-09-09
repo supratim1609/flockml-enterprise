@@ -26,20 +26,20 @@ Every enterprise deployment and proof-of-concept (POC) is evaluated against **tr
 ```mermaid
 flowchart TD
     subgraph Phase 1 [Tier 1: Deterministic Verification]
-        T1[Automated Schema & Referential Integrity Check]
-        T2[Deterministic Risk Formula Concordance Test]
+        T1["Automated Schema & Referential Integrity Check"]
+        T2["Deterministic Risk Formula Concordance Test"]
     end
 
     subgraph Phase 2 [Tier 2: Blind Analyst Validation]
-        B1[Senior Security Analyst generates Ground Truth Rankings]
-        B2[FlockML generates Automated Rankings on Same Dataset]
-        B3[Calculate Spearman Rank Correlation & Top-10 Overlap]
+        B1["Senior Security Analyst generates Ground Truth Rankings"]
+        B2["FlockML generates Automated Rankings on Same Dataset"]
+        B3["Calculate Spearman Rank Correlation & Top-10 Overlap"]
     end
 
     subgraph Phase 3 [Tier 3: Operational Staging]
-        S1[Deploy in Isolated Private VM / Subnet]
-        S2[Ingest Shadow Scans from Enterprise Vulnerability Sensor]
-        S3[Evaluate End-to-End Latency & Resource Utilization]
+        S1["Deploy in Isolated Private VM / Subnet"]
+        S2["Ingest Shadow Scans from Enterprise Vulnerability Sensor"]
+        S3["Evaluate End-to-End Latency & Resource Utilization"]
     end
 
     Phase 1 --> Phase 2 --> Phase 3

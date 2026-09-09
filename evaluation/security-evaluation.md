@@ -12,10 +12,10 @@ The objective of the Security Evaluation protocol is to empirically verify that 
 
 ```mermaid
 graph LR
-    A[Adversarial Test Scenarios] --> B[Boundary & Network Testing]
-    A --> C[AI Safety & Injection Testing]
-    A --> D[Data Integrity & Poisoning]
-    B --> E[Security Validation Report]
+    A["Adversarial Test Scenarios"] --> B["Boundary & Network Testing"]
+    A --> C["AI Safety & Injection Testing"]
+    A --> D["Data Integrity & Poisoning"]
+    B --> E["Security Validation Report"]
     C --> E
     D --> E
 ```

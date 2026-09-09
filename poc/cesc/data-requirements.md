@@ -10,10 +10,10 @@ To evaluate the FlockML Enterprise Security Intelligence POC, the enterprise pro
 
 ```mermaid
 flowchart LR
-    A[Asset Inventory Sample<br>100–500 Assets] --> D[FlockML Staging Ingestion]
-    B[Scanner Findings Export<br>1,000–5,000 Findings] --> D
-    C[Remediation SLA Policy<br>Standard SLA Matrix] --> D
-    D --> E[Grounded Prioritization Engine]
+    A["Asset Inventory Sample<br>100–500 Assets"] --> D["FlockML Staging Ingestion"]
+    B["Scanner Findings Export<br>1,000–5,000 Findings"] --> D
+    C["Remediation SLA Policy<br>Standard SLA Matrix"] --> D
+    D --> E["Grounded Prioritization Engine"]
 ```
 
 ### Dataset 1: Asset Inventory Export

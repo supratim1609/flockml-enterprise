@@ -9,31 +9,31 @@ flowchart TD
     subgraph Enterprise Private Data Center
         subgraph Staging VLAN [Isolated Staging VLAN (100% Air-Gapped)]
             direction TB
-            subgraph VM1 [Private VM 1: Data & Ingestion Layer]
-                ING[Scanner Log Ingestion Parser]
-                CMDB[Asset Criticality Cache]
-                VEC[(Local Vector & Entity Store)]
+            subgraph VM1 ["Private VM 1: Data & Ingestion Layer"]
+                ING["Scanner Log Ingestion Parser"]
+                CMDB["Asset Criticality Cache"]
+                VEC[("Local Vector & Entity Store")]
             end
 
-            subgraph VM2 [Private VM 2: Intelligence & Model Runtime]
-                SCORE[Deterministic Risk Scoring Engine]
-                LLM[Air-Gapped Foundation Model (Quantized)]
-                API[REST Decision-Support API]
+            subgraph VM2 ["Private VM 2: Intelligence & Model Runtime"]
+                SCORE["Deterministic Risk Scoring Engine"]
+                LLM["Air-Gapped Foundation Model (Quantized)"]
+                API["REST Decision-Support API"]
             end
 
             VM1 <-->|Internal Encrypted Stream| VM2
         end
 
-        subgraph SecOps [Enterprise SecOps Personnel]
-            ANALYST[SecOps Analyst Workstation]
-            CISO[CISO / Executive Review Dashboard]
+        subgraph SecOps ["Enterprise SecOps Personnel"]
+            ANALYST["SecOps Analyst Workstation"]
+            CISO["CISO / Executive Review Dashboard"]
         end
 
         ANALYST & CISO -->|HTTPS Internal Access Only| API
     end
 
-    subgraph External [External Internet / Public Cloud]
-        INTERNET[Public Internet / AWS / OpenAI]
+    subgraph External ["External Internet / Public Cloud"]
+        INTERNET["Public Internet / AWS / OpenAI"]
     end
 
     Staging VLAN -.->|PHYSICAL AIR-GAP: ZERO EGRESS| INTERNET

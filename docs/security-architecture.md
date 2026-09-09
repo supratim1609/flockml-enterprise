@@ -12,21 +12,21 @@ FlockML Enterprise is designed under a strict **zero-trust and zero-egress** mod
 
 ```mermaid
 flowchart TD
-    subgraph ZeroTrust [Zero-Trust Security Controls]
+    subgraph ZeroTrust ["Zero-Trust Security Controls"]
         direction TB
-        C1[Network Isolation & Physical Air-Gap]
-        C2[mTLS 1.3 Cryptographic Authentication]
-        C3[Ephemeral In-Memory Zeroization]
-        C4[Role-Based Access Control RBAC]
-        C5[Cryptographic SHA-256 Audit Trail]
+        C1["Network Isolation & Physical Air-Gap"]
+        C2["mTLS 1.3 Cryptographic Authentication"]
+        C3["Ephemeral In-Memory Zeroization"]
+        C4["Role-Based Access Control RBAC"]
+        C5["Cryptographic SHA-256 Audit Trail"]
     end
 
-    Data[Enterprise Vulnerability & Asset Records] --> C1
+    Data["Enterprise Vulnerability & Asset Records"] --> C1
     C1 --> C2
     C2 --> C4
     C4 --> C3
     C3 --> C5
-    C5 --> Output[Verified Decision Support Artifact]
+    C5 --> Output["Verified Decision Support Artifact"]
 ```
 
 ### 2.1 Data Residency & Network Isolation

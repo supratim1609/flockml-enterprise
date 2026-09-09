@@ -38,10 +38,10 @@ FlockML Enterprise structures the adoption of private AI into five distinct oper
 
 ```mermaid
 flowchart LR
-    A[1. Controlled Ingestion] --> B[2. Structured Indexing]
-    B --> C[3. Retrieval & Grounding]
-    C --> D[4. Private Model Inference]
-    D --> E[5. Audited Decision Support]
+    A["1. Controlled Ingestion"] --> B["2. Structured Indexing"]
+    B --> C["3. Retrieval & Grounding"]
+    C --> D["4. Private Model Inference"]
+    D --> E["5. Audited Decision Support"]
 ```
 
 1. **Controlled Ingestion:** Ingests enterprise structured records (CSV, SQL, JSON) and unstructured documents (PDF, DOCX) through encrypted, role-gated internal pipelines.
